@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', cursive;
+  --ff-body: 'Palanquin', sans-serif;
+  --ff-desktop: 'Roboto', sans-serif;
+
+  --bg-heading: hsl(218, 17%, 62%);
+  --bg-primary: hsl(233, 100%, 97%);
+  --bg-heading-sm: hsl(275, 18%, 79%);
+  --bg-text-img:  hsl(312, 91%, 96%);
+  --fc-primary: hsl(0, 0%, 100%);
+  --fc-secondary: hsl(274, 84%, 12%);
+  --fc-secondary-desktop: hsl(0, 0%, 100%);
+  --fc-img: hsl(232, 17%, 35%);
+
+  font-size: 62.5%;
+  --fs-heading: 4rem;
+  --fs-heading-desktop: 5rem;
+  --fs-body: 1.8rem;
+  --fs-body-desktop: 1.8rem;
+  --fs-img: 2rem;
+}
+
+body {
+  background-color: var(--bg-primary);
+  padding: 3.2rem 0 6rem;
+}
+
+body main {
+  padding: 0 3.2rem;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 28rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--bg-heading);
+
+}
+
+#hero {
+  margin: auto;
+}
+
+#hero img {
+  height: 14rem;
+  object-fit: cover;  
+  margin: 0 auto 3.2rem;
+  display: flex;
+  text-align: center;
+
+}
+
+
+.page {
+  margin: 0 auto;
+  
+}
+
+.text-desktop {
+  display: none;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+  margin: 5rem auto;
+
+  
+}
+
+.text p {
+  margin: 5rem auto;
+  font-family: var(--ff-body);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  color: var(--fc-secondary);  
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+}
+
+.card {
+  position: relative;
+  font-family: var(--ff-heading); 
+  display: grid;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 3.2rem;
+  border-radius: 5rem;
+
+}
+
+.card h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  font-size: var(--fs-img);
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.5rem;
+  color: var(--fc-img);
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+}
+
+.card h2 span {
+  border-radius: 2rem;
+  background-color: var(--bg-text-img);
+  font-size: var(--fs-img);
+  
+  padding: 0 2rem;
+
+  width: fit-content;
+  height: 3.5rem;
+
+  display: inline-flex;
+  align-items: center;
+
+  margin: 0;
+
+
+}
+
+
+header img {
+  margin: 0 0 3.2rem;
+}
+
+header {
+  font-family: var(--ff-heading);
+  align-items: center;
+  text-align: center;
+}
+
+header .page2 {
+  background-color: var(--bg-heading-sm);
+  width: 100%;
+  height: 5rem;
+  padding: 0.8rem 9rem;
+
+}
+
+header .page2 h1 {
+  font-size: var(--fs-heading);
+  font-weight: 400;
+  color: var(--fc-primary);
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin: 0;
+  
+}
+
+main div:nth-child(3), main div:nth-child(4)  {
+  display: none;
+}
+
+@media (min-width: 900px) {
+
+  main {
+    display: grid;
+  }
+
+  body::before {
+    width: 38rem;
+    height: 100%;  
+  }
+  
+  .page {
+    display: flex;    
+  }
+
+  header {
+    width: 38rem;    
+  }
+
+  .text {
+    display: none;
+  }
+
+  .text-desktop {
+    margin: 5rem auto;
+    display: flex;
+    font-family: var(--ff-deskto);
+    font-size: var( --fs-body-desktop);
+    color: var(--fc-secondary-desktop);      
+    font-weight: 400;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 27rem;
+    height: 27rem;
+    line-height: 1.5
+
+  }
+
+  header .page2 {
+    width: 38rem;
+    height: 7rem;
+    padding: 2rem 8rem;      
+  }
+
+  .card img {
+    margin: 0;
+  }
+
+  main {
+    grid-template-areas: 
+    "D C" 
+    "D C"
+    "A B";
+    gap: 3.2rem;
+    align-items: normal;
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+  main div:nth-child(5) {
+    grid-area: B;
+  }
+  main div:nth-child(6) {
+    grid-area: D;
+  }
+
+}
+
+@media (min-width: 1200px) { 
+  main {
+    grid-template-areas: 
+    "A B C" 
+    "D B F"
+    "D E F";
+    
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+  main div:nth-child(3) {
+    grid-area: C;
+    display: flex;
+  }
+  main div:nth-child(4) {
+    grid-area: D;
+    display: flex;
+  }
+  main div:nth-child(5) {
+    grid-area: E;
+  }
+  main div:nth-child(6) {
+    grid-area: F;
+  }
+
+}
