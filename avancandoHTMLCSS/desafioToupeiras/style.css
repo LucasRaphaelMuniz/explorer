@@ -5,12 +5,13 @@
 }
 
 .page {
-  max-width: 1440px;
-  margin: 100px auto;
+  display: flex;
+  width: 100%;
 }
 
 .background {
   position: absolute;
+  
   z-index: -1;
 }
 
@@ -32,18 +33,18 @@
 
 
 .toupeira4 {
-  animation: movetoupeira 1s 4000ms;
+  animation: movetoupeira 1s 5000ms infinite;
   background: url(./assets/toupeira6.svg);
 }
 
 .toupeira6 {
   background: url(./assets/toupeira6.svg);
-  animation: movetoupeira 1s ;
+  animation: movetoupeira 1s 1000ms infinite;
   }
 
 .toupeira11 {
   background: url(./assets/toupeira6.svg);
-  animation: movetoupeira 1s 2000ms;
+  animation: movetoupeira 1s 3000ms infinite;
 }
 
 .toupeira1 {
@@ -92,14 +93,6 @@
   grid-area: L;
 }
 
-@keyframes invisivble {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 @keyframes movetoupeira {
   0% {
