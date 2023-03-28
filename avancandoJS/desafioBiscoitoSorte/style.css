@@ -53,7 +53,7 @@ p {
   display: none;
 }
 
-.cookieClose:hover {
+.cookieClose {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
