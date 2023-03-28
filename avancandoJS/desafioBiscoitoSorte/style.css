@@ -13,6 +13,7 @@ body {
   font-size: 1.6rem;
   display: grid;
   place-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -27,8 +28,8 @@ body, button {
 main {
   background: #FFFFFF;
   border-radius: 0.5rem;
-
   padding: 4.8rem 6.4rem 6.4rem;
+  margin: auto;
   width: min(42.8rem, 90%);
   text-align: center;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
@@ -98,7 +99,7 @@ h3 {
   gap: 1rem;
   width: 30rem;
   height: 11rem;
-  margin-bottom: 1.7rem;  
+  margin: auto;
 
   transform-origin: bottom center;
   animation: upText 2s forwards; /* tempo de animação e direção */
@@ -107,8 +108,8 @@ h3 {
 button {
   background: #FF9500;
   border-radius: .4rem;
-  padding: 16px;
-  gap: 10px;
+  padding: 1.6rem;
+  gap: 1rem;
   color: #FFFFFF;
   font-size: 1.5rem;
   border: none;
@@ -122,5 +123,46 @@ button {
   }
   to {
     transform: scale(1);
+  }
+}
+
+
+@media (max-width: 700px) {
+  body {
+    display: flex;   
+    justify-content: center;
+  }
+  main {
+    padding: 2rem 3rem 3rem;
+    width: min(30rem, 90%);
+    text-align: center;
+    margin: 0;
+  }
+
+  img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+  }
+
+  h3 {
+    display: flex;
+    font-size: 1.6rem;
+    gap: .5rem;
+    width: 13rem;
+  
+  }
+
+  button {
+    background: #FF9500;
+    border-radius: .4rem;
+    padding: .8rem;
+    gap: .5rem;
+    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
