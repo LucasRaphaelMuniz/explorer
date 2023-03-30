@@ -7,6 +7,7 @@
 :root {
   font-size: 62.5%;
   --tt-heading: #0C3440;
+  --tt-heading-class: #397a8e;
   --tt-label: #00453A;
   --tt-input: #212529;
   --tt-placeholder:  rgba(73, 80, 87, 0.5);
@@ -55,6 +56,12 @@ body, input, button {
   font-size: 3.2rem;
   line-height: 4rem;
   color: var(--tt-heading)
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--tt-heading-class);
 }
 
 form {
