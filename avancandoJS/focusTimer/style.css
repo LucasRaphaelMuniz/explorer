@@ -21,7 +21,7 @@ body {
   color: var(--tt-color);
   font-family: 'Roboto', sans-serif;
   display: grid;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 main {
