@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background-image: url("../images/uni1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 0 7.2rem;
+  height: 4.2rem;
+}
+
+nav a {
+  padding: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+  line-height: 2.2rem;
+  cursor: pointer;
+}
+
+.home {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+h1 {
+  color: #E1E1E6;
+  font-size: 4.8rem;
+  padding: 0 0 0 10rem;
+
+}
+
+.home h1 {
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 400;
+  color: #E1E1E6;
+  margin-top: 1.6rem;
+  width: 64.8rem;
+  height: 17.4rem;
+  padding: 0 0 0 10rem
+
+}
+
+.home button{
+  background-color: transparent;
+  width: 22.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 12px 32px;
+  gap: .8rem;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2.4rem;
+
+}
+
+.home button a{
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+.home button:hover{
+  background: #FFFFFF;
+}
+
+.home button a:hover {
+  color: #02799D;
+}
+
+nav a {
+  font-weight: normal;
+}
+
+nav a.active {
+  font-weight: bold;
+}
