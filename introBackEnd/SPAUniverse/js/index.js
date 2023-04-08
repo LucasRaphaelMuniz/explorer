@@ -9,16 +9,18 @@ router.handle()
 window.onpopstate = () => router.handle()
 window.route = () => router.route()
 
-const btnsExploracao = document.querySelectorAll('.btnMenuExploracao');
+const btnHOmeExploracao = document.querySelector('.btnMenuExploracao');
 const btnHome = document.querySelector('.menuHome');
 const btnUniverso = document.querySelector('.menuOUniverso');
 const btnExploracao = document.querySelector('.menuExploracao');
 
 
-btnsExploracao.forEach(btn => {
-  btn.addEventListener('click', buttonExploracao);
-});
 
+if(btnHOmeExploracao){
+  btnRedirect.addEventListener('click', function(){
+    buttonExploracao()
+  })
+}
 btnHome.addEventListener('click', function(){
   buttonHome()
 })
