@@ -217,7 +217,7 @@ td .remove {
 table tbody{
   display: block;
   overflow-y: overlay;
-  max-height: 48rem;
+  max-height: 32.3rem;
 
   scroll-behavior: smooth;
 }
@@ -245,6 +245,6 @@ table tbody{
   background-repeat: no-repeat;
   background-size: contain;
 
-  height: 48rem;
+  height: 32.3rem;
 }
 
