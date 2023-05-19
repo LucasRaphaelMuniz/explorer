@@ -1,10 +1,16 @@
-import "./styles.css";
+import {Container} from "./styles";
+import { Button } from "../../components/buttons";
 
-export default function Details(){
+export default function Details() {
 
-  return(
-    <>
-      <h1>Hello!</h1>
-    </>
+  return (
+    <Container>
+      <h1>Hello World</h1>
+      <span>Lucas Muniz</span>
+      <Button title="Inicio" loading />
+      <Button title="Voltar"/>
+      <Button title="Sair"/>
+    </Container>   
+
   )
-}
+};
