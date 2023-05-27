@@ -1,6 +1,10 @@
 import { RiShutDownLine } from "react-icons/ri";
 import { Container, Profile, Logout } from "./styles";
 import { Input } from '../Input'
+import { Link } from 'react-router-dom'
+
+
+
 export function Header(){
     return(
         <Container>

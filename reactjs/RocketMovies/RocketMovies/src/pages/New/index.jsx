@@ -7,6 +7,8 @@ import { NoteItem } from "../../components/NoteItem";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
 import { FiArrowLeft } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -19,7 +21,8 @@ export function New() {
         <main>
             <Form>
                 <header>
-                    <ButtonText title="Voltar"/>
+                    
+                    <Link to="/"><ButtonText title="Voltar"/></Link>
                     <h1>Novo Filme</h1>
                 </header>
                 <div>
