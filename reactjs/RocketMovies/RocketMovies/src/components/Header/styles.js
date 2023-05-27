@@ -16,7 +16,7 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
 
-    padding: 0 80px;
+    padding: 10px 80px;
 
 
     h1 {
