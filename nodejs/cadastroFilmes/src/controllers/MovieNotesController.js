@@ -3,7 +3,7 @@ const knex = require("../database/knex");
 class MovieNotesController {
     async create(req, res) {
         const {title, description, rating, tags} = req.body;
-        const {user_id} = req.params;
+        const user_id = req.user.id;
 
         const [note_id] = await knex("notes").insert({
             title,
