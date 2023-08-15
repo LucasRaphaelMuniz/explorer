@@ -18,6 +18,8 @@ usersRoutes.patch("/avatar", ensureAuthenticated, upload.single("avatar"), userA
 
 module.exports = usersRoutes;
 
+
+
 /*
 Exmplo de middleware
 function myMiddleware(req, res, next) {

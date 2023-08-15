@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 
 import { Input } from '../../components/Input'
-import { Button } from '../../components/Buttons'
+import { Button } from '../../components/buttons'
 
 import avatarPlaceHolder from '../../assets/avatar_placeholder.svg'
 

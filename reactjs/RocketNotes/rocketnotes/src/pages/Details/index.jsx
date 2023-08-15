@@ -6,7 +6,7 @@ import { api } from "../../services/api";
 
 import { Tag } from "../../components/Tag";
 import { Header } from "../../components/Header";
-import { Button } from "../../components/Button";
+import { Button } from "../../components/buttons";
 import { Section } from "../../components/Section";
 import { ButtonText } from "../../components/ButtonText";
 
@@ -49,6 +49,7 @@ export function Details(){
               title="Excluir nota"
               onClick={handleRemove} 
             />
+            
 
             <h1>
               {data.title}
